@@ -1,0 +1,12 @@
+{
+  "name": "@alanngo/custom-components",
+  "version": "1.0.0",
+  "description": "A library of custom react components and hooks to make life easier",
+  "scripts": {
+    
+  },
+  "keywords": ["custom", "components"],
+  "repository": {"type": "git"},
+  "author": "Alan Ngo",  
+  "license": "ISC"
+}
