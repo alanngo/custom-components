@@ -1,11 +1,11 @@
 {
   "name": "@alanngo/custom-components",
-  "version": "1.1.0",
+  "version": "1.1.1",
   "description": "A library of custom react components and hooks to make life easier",
-  "main": "index.jsx",
+  "main": "index.js",
   "scripts": {
-    "storybook": "start-storybook -p 6006",
-    "build-storybook": "build-storybook"
+    "build": "webpack --mode production --display-modules",
+    "clean": " rm -rf node_modules && yarn install"
   },
   "keywords": [
     "custom",
@@ -18,11 +18,19 @@
   "license": "ISC",
   "devDependencies": {
     "@babel/core": "^7.16.0",
-    "@storybook/addon-actions": "^6.3.12",
-    "@storybook/addon-essentials": "^6.3.12",
-    "@storybook/addon-links": "^6.3.12",
-    "@storybook/react": "^6.3.12",
-    "babel-loader": "^8.2.3"
+    "babel-loader": "^8.2.3",
+    "@babel/cli": "^7.7.7",
+    "@babel/plugin-proposal-class-properties": "^7.7.4",
+    "@babel/preset-env": "^7.7.7",
+    "@babel/preset-react": "^7.7.4",
+    "css-loader": "^3.4.1",
+    "prop-types": "^15.7.2",
+    "react": "^17.0.1",
+    "style-loader": "^1.1.2",
+    "url-loader": "^3.0.0",
+    "webpack": "^4.41.5",
+    "webpack-cli": "^3.3.10",
+    "webpack-node-externals": "^1.7.2"
   },
   "peerDependencies": {
     "react": "^17.0.1",
