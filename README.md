@@ -12,11 +12,21 @@ yarn add @alanngo/custom-components
 
 ## 🚀 Components
 ### Break
+
 Need multiple line breaks without rewriting ``<br/>`` tag?
 Use this component to help you in just 1 line
 
+#### Avoid
+```html
+<br/>
+<br/>
+<br/>
+...
+```
+
+#### Prefered
 ```jsx
-<Break number={2}/> 
+<Break number={3}/> 
 ```
 <table>
 <th>Props</th>
@@ -30,7 +40,17 @@ Use this component to help you in just 1 line
 </table>
 
 ### RenderIf
+Eliminates the need of ternary operator for conditional rendering
+#### Avoid
+```jsx
+const arr = [1, 2, 3]
 
+{(arr.length>0?
+<h1> everything nested will render if arr length is greater than 0 </h1>:
+<></>)}
+```
+
+#### Prefered
 ```jsx
 const arr = [1, 2, 3]
 
