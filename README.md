@@ -9,6 +9,10 @@ or
 ```bash
 yarn add @alanngo/custom-components
 ```
+## 🚀 Import Components
+```js
+import {RenderIf} from "@alanngo/custom-components/dist"
+```
 
 ## 🚀 Components
 ### Break
@@ -32,10 +36,13 @@ Use this component to help you in just 1 line
 <th>Props</th>
 <th>Type</th>
 <th>Description</th>
+<th>Default Value</th>
 <tr>
 <td>number</td>
 <td>Number</td>
 <td>How many line breaks to create</td>
+<td>1</td>
+
 </tr>
 </table>
 
@@ -63,20 +70,24 @@ const arr = [1, 2, 3]
 <th>Props</th>
 <th>Type</th>
 <th>Description</th>
+<th>Default Value</th>
 <tr>
 <td>condition</td>
 <td>Boolean</td>
 <td>Condition to render children</td>
+<td>false</td>
 </tr>
 <tr>
 <td>children</td>
 <td>JSX</td>
-<td>These elemts will render if condition is true</td>
+<td>These elements will render if condition is true</td>
+<td>{blank jsx fragments}</td>
 </tr>
 <tr>
 <td>fallback</td>
 <td>JSX</td>
-<td>These elemts will render if condition is false</td>
+<td>These elements will render if condition is false</td>
+<td>"fallback goes here"</td>
 </tr>
 </table>
 
