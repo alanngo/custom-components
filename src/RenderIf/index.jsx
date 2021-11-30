@@ -4,7 +4,7 @@ export const RenderIf = (
     {
         condition = false,
         children = <></>,
-        fallback = <>fallback jsx goes here</>
+        fallback = <></>
     }) =>
 (
     <>

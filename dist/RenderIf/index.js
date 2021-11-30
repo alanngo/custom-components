@@ -13,7 +13,7 @@ const RenderIf = _ref => {
   let {
     condition = false,
     children = /*#__PURE__*/_react.default.createElement(_react.default.Fragment, null),
-    fallback = /*#__PURE__*/_react.default.createElement(_react.default.Fragment, null, "fallback jsx goes here")
+    fallback = /*#__PURE__*/_react.default.createElement(_react.default.Fragment, null)
   } = _ref;
   return /*#__PURE__*/_react.default.createElement(_react.default.Fragment, null, condition ? children : fallback);
 };
